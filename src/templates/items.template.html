@@ -1,0 +1,7 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items.data.menu_items">
+    <b>{{ item.name }} ({{ item.short_name }})</b>: <i>{{ item.description }}</i> &nbsp;
+      {{ item.price_small | currency }} ({{ item.small_portion_name }}) /
+      {{ item.price_large | currency }} ({{ item.large_portion_name }})
+  </li>
+</ul>
